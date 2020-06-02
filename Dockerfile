@@ -6,7 +6,7 @@ COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt 
 
 RUN apt-get update && apt-get install \
-    -yqq --no-install-recommends wget unzip curl
+    -yqq --no-install-recommends wget unzip curl gnupg2
 
 ADD src /usr/local/scraper/src
 
