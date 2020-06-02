@@ -32,5 +32,6 @@ for x in comment_ids:
 
     # Adding date, userid and comment for each user in a dataframe
     comments.loc[len(comments)] = [date, userid, comment]
-driver.save_screnshot('test.png')
+driver.save_screenshot('test.png')
+comments.write_csv("foo.csv")
 driver.quit()
