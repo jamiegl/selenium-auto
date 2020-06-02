@@ -8,7 +8,7 @@ RUN pip install -r /tmp/requirements.txt
 RUN apt-get update && apt-get install \
     -yqq --no-install-recommends wget unzip curl gnupg2
 
-COPY src /usr/local/scraper/
+COPY src/ /usr/local/scraper/
 
 RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
 RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
