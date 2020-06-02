@@ -7,7 +7,7 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--window-size=1420,1080')
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')
-driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
+driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
 
 driver.get('https://forums.edmunds.com/discussion/40920/ford/f-150/fuel-economy-test-2-7-liter-ecoboost-vs-5-0-liter-v8-2015-ford-f-150-long-term-road-test')
 
