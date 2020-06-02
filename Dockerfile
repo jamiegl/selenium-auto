@@ -6,7 +6,7 @@ COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt 
 
 RUN apt-get update && apt-get install \
-    -yqq --no-install-recommends wget, unzip
+    -yqq --no-install-recommends wget unzip
 
 ADD src /usr/local/scraper/src
 
